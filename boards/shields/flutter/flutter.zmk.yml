@@ -3,7 +3,6 @@ id: flutter
 name: flutter
 type: shield
 url: https://github.com/10williamsjoel/flutter-shield-module
-requires:
-  - pro_micro
+requires: [pro_micro]
 features:
   - keys
