@@ -1,0 +1,6 @@
+if SHIELD_FLUTTER
+
+config ZMK_KEYBOARD_NAME
+    default "Flutter"
+
+endif
