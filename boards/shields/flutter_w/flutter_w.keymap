@@ -40,49 +40,49 @@
 &kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
                                           &kp A         &kp A         &kp A         &kp A    
             >;
-        }
+        };
         sym1 {
             bindings = <
               &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
 &kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
                                           &kp A         &kp A         &kp A         &kp A    
             >;
-        }
+        };
         sym2 {
             bindings = <
               &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
 &kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
                                           &kp A         &kp A         &kp A         &kp A    
             >;
-        }
+        };
         num {
             bindings = <
               &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
 &kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
                                           &kp A         &kp A         &kp A         &kp A    
             >;
-        }
+        };
         sys {
             bindings = <
               &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
 &kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
                                           &kp A         &kp A         &kp A         &kp A    
             >;
-        }
+        };
         bt {
             bindings = <
               &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
 &kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
                                           &kp A         &kp A         &kp A         &kp A    
             >;
-        }
+        };
         alpha_caps_2 {
             bindings = <
               &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
 &kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
                                           &kp A         &kp A         &kp A         &kp A    
             >;
-        }
+        };
     };
 
 };
