@@ -50,7 +50,7 @@
         };
         sym1 {
             bindings = <
-              &kp LS(N3)   	&kp HASH      &kp DLLR                      	    	&kp LT	      &kp GT 		&kp CARET	
+              &kp HASH      &kp LS(N3)    &kp DLLR                      	    	&kp LT	      &kp GT 		&kp CARET	
 &kp GRAVE	  &kp TILDE 	&kp MINUS     &kp BSLH	                             	&kp LBKT	  &kp RBKT	 	&kp PIPE 	&kp SLASH
                                           &trans        &trans        &trans        &trans   
             >;
