@@ -58,28 +58,28 @@
         sym2 {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&ktrans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
-            >;s
+            >;
         };
         sys {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&ktrans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;
         };
         bt {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&ktrans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;
         };
         alpha_caps_2 {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&ktrans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;
         };
