@@ -43,7 +43,7 @@
         };
         num {
             bindings = <
-              &mt LGUI PLUS &mt LALT DOT  &LSFT N0                                  &RSFT N7      &LALT N8      &RGUI N9          
+              &mt LGUI PLUS &mt LALT DOT  &mt LCTL N0                               &mt RCTL N7   &mt LALT N8   &mt RGUI N9          
 &lt NM1 MINUS &lt SM2 N1 	&lt SM1 N2    &lt SYS N3	 	                        &lt SYS N4    &lt SM1 N5	&lt SM2 N6	&lt NM1 EQUAL
                                           &trans        &trans        &trans        &trans   
             >;
@@ -58,28 +58,28 @@
         sym2 {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;
         };
         sys {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;
         };
         bt {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;
         };
         alpha_caps_2 {
             bindings = <
               &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
+&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;
         };
