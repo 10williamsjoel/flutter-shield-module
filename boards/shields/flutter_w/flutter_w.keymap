@@ -36,9 +36,9 @@
         };
         alpha_2 {
             bindings = <
-              &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
-&kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
-                                          &kp A         &kp A         &kp A         &kp A    
+              &kp V         &kp W         &kp M                                     &kp F         &kp SQT       &kp Z           
+&kp  Q        &kp J         &kp P         &kp K       	                            &kp B         &kp DOT   	&kp X     	&kp Y    
+                                          &sk LSHIFT    &none         &kp A         &kp A    
             >;
         };
         sym1 {
