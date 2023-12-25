@@ -16,9 +16,9 @@
 /* Layers */
 #define AL1  0
 #define AL2  1
-#define SM1  2
-#define SM2  3	
-#define NM1  4	
+#define NM1  2
+#define SM1  3	
+#define SM2  4	
 #define SYS  5
 #define BT   6	
 #define AL2U 7
@@ -41,6 +41,13 @@
                                           &sk LSHIFT    &none         &kp A         &kp A    
             >;
         };
+        num {
+            bindings = <
+              &mt LGUI PLUS &mt LALT DOT  &LSFT N0                                  &RSFT N7      &LALT N8      &RGUI N9          
+&lt NM1 MINUS &lt SM2 N1 	&lt SM1 N2    &lt SYS N3	 	                        &lt SYS N4    &lt SM1 N5	&lt SM2 N6	&lt NM1 EQUAL
+                                          &trans        &trans        &trans        &trans   
+            >;
+        };
         sym1 {
             bindings = <
               &kp LA(N3)   	&kp HASH      &kp DLLR                      	    	&kp LT	      &kp GT 		&kp CARET	
@@ -54,13 +61,6 @@
 &ktrans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
                                           &trans        &trans        &trans        &trans   
             >;s
-        };
-        num {
-            bindings = <
-              &trans        &trans        &trans                                    &trans        &trans        &trans          
-&ktrans       &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
-                                          &trans        &trans        &trans        &trans   
-            >;
         };
         sys {
             bindings = <
