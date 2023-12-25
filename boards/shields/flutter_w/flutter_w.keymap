@@ -42,10 +42,14 @@
             >;
         };
         sym1 {
+            KC_PND  ,KC_NUHS ,KC_DLR  ,XXXXXXX ,DM_PLY1 ,                          DM_PLY2 ,XXXXXXX ,KC_LTHN ,KC_GTHN ,KC_CIRC ,XXXXXXX ,XXXXXXX ,
+  //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+     XXXXXXX ,KC_GRV  ,KC_PIPE ,KC_MINS ,KC_NUBS ,XXXXXXX ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,KC_LBRC ,KC_RBRC ,KC_PPE  ,KC_SLSH ,XXXXXXX ,
+  //├
             bindings = <
-              &kp A         &kp A         &kp A                                     &kp A         &kp A         &kp A           
-&kp  A        &kp A         &kp A         &kp A       	                            &kp A         &kp A     	&kp A     	&kp A    
-                                          &kp A         &kp A         &kp A         &kp A    
+              &kp LA(N3)   	&kp HASH      &kp DLLR                      	    	&kp LT	      &kp GT 		&kp CARET	
+&kp GRAVE	  &kp TILDE 	&kp MINUS     &kp BSLH	                             	&kp LBKT	  &kp RBKT	 	&kp PIPE 	&kp SLASH
+                                          &kptrans      &kp A         &kp A         &kp A    
             >;
         };
         sym2 {
