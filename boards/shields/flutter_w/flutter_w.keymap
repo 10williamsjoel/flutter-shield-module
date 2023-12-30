@@ -29,58 +29,91 @@
 
         alpha_1 {
             bindings = <
-              &mt LGUI L    &mt LALT G    &mt LCTL D                                &mt RCTL H    &mt LALT U    &mt RGUI O      
-&lt NM1 I     &lt SM2 S  	&lt SM1 R	  &lt SYS T 	 	                        &lt SYS N     &lt SM1 E 	&lt SM2 A 	&lt NM1 C
-                                          &mt LSFT SPC  &key_repeat   &sl AL2U      &sl AL2
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &mt LGUI L    &mt LALT G    &mt LCTL D                                &mt RCTL H    &mt LALT U    &mt RGUI O      
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &lt NM1 I     &lt SM2 S     &lt SM1 R	 &lt SYS T 	 	                           &lt SYS N     &lt SM1 E 	   &lt SM2 A 	&lt NM1 C
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &mt LSFT SPC  &key_repeat   &sl AL2U      &sl AL2
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
+            
             >;
         };
         alpha_2 {
             bindings = <
-              &kp V         &kp W         &kp M                                     &kp F         &kp SQT       &kp Z           
-&kp  Q        &kp J         &kp P         &kp K       	                            &kp B         &kp DOT   	&kp X     	&kp Y    
-                                          &sk LSHIFT    &none         &kp A         &kp A    
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &kp V         &kp W         &kp M                                     &kp F         &kp SQT       &kp Z           
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &kp  Q        &kp J         &kp P         &kp K       	                           &kp B         &kp DOT       &kp X     	&kp Y    
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &sk LSHIFT    &none         &kp A         &kp A    
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
         num {
             bindings = <
-              &mt LGUI PLUS &mt LALT DOT  &mt LCTL N0                               &mt RCTL N7   &mt LALT N8   &mt RGUI N9          
-&lt NM1 MINUS &lt SM2 N1 	&lt SM1 N2    &lt SYS N3	 	                        &lt SYS N4    &lt SM1 N5	&lt SM2 N6	&lt NM1 EQUAL
-                                          &trans        &trans        &trans        &trans   
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &mt LGUI PLUS &mt LALT DOT  &mt LCTL N0                               &mt RCTL N7   &mt LALT N8   &mt RGUI N9          
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &lt NM1 MINUS &lt SM2 N1    &lt SM1 N2    &lt SYS N3	 	                           &lt SYS N4    &lt SM1 N5	   &lt SM2 N6	&lt NM1 EQUAL
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &trans        &sl AL2U      &trans   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
         sym1 {
             bindings = <
-              &kp HASH      &kp LS(N3)    &kp DLLR                      	    	&kp LT	      &kp GT 		&kp CARET	
-&kp GRAVE	  &kp TILDE 	&kp MINUS     &kp BSLH	                             	&kp LBKT	  &kp RBKT	 	&kp PIPE 	&kp SLASH
-                                          &trans        &trans        &trans        &trans   
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &kp POUND     &kp NUSH      &kp DLLR                      	    	   &kp LT	     &kp GT 	   &kp CARET	
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &kp grave	 &kp tilde 	   &kp minus     &kp bslh	                               &kp lbkt	     &kp rbkt	   &kp pipe 	&kp slash
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &trans        &sl AL2U      &trans   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
         sym2 {
             bindings = <
-              &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
-                                          &trans        &trans        &trans        &trans   
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &kp AT        &kp EXCL      &trans                                    &kp LPAR      &kp RPAR      &kp SEMI          
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &kp ASTERISK  &kp PERCENT   &kp QUESTION  &kp DQT                                   &kp LBRC      &kp RBRC  	   &kp AMPS  	&kp COLON
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &trans        &sl AL2U      &trans   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
         sys {
             bindings = <
-              &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
-                                          &trans        &trans        &trans        &trans   
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &trans        &trans        &trans                                    &trans        &trans        &trans          
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &trans        &trans        &trans        &trans                                    &trans        &trans    	   &trans    	&trans   
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &trans        &sl AL2U      &trans   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
         bt {
             bindings = <
-              &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
-                                          &trans        &trans        &trans        &trans   
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &trans        &trans        &trans                                    &trans        &trans        &trans          
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &trans        &trans       &trans        &trans                                     &trans        &trans    	   &trans    	&trans   
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &trans        &sl AL2U      &trans   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
         alpha_caps_2 {
             bindings = <
-              &trans        &trans        &trans                                    &trans        &trans        &trans          
-&trans        &trans        &trans        &trans      	                            &trans        &trans    	&trans    	&trans   
-                                          &trans        &trans        &trans        &trans   
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &trans        &trans        &trans                                    &trans        &trans        &trans          
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &trans        &trans       &trans        &trans                                     &trans        &trans    	   &trans    	&trans   
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &to AL1       &sl AL2U      &trans   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
     };
