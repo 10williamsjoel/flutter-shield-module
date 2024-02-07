@@ -39,7 +39,7 @@
         combo_caps { // caps word 
             timeout-ms = <50>;
             key-positions = <10 11 12>;
-            bindings = <&caps_word>;
+            bindings = <&caps_on>;
         };
         combo_num { // Num lock
             timeout-ms = <50>;
@@ -66,14 +66,21 @@
             #binding-cells = <0>; // Must be 0
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&macro_tap &capsoff &to AL1>;
+            bindings = <&macro_tap &caps_off &to AL1>;
         };
-        capsoff: capsoff {
+        caps_off: caps_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; // Must be 0
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&macro_tap &none>;
+            bindings = <&macro_tap &kp F19>;
+        };
+        caps_on: caps_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Must be 0
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_tap &caps_off &caps_word>;
         };
     };
 };
