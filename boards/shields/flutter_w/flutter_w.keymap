@@ -112,9 +112,9 @@
         sym2 {
             bindings = <
 //              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
-                 &kp AT        &kp EXCL      &trans                                    &kp LPAR      &kp RPAR      &kp SEMI          
+                 &kp DQT       &kp EXCL      &trans                                    &kp LPAR      &kp RPAR      &kp SEMI          
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
-   &kp ASTERISK  &kp PERCENT   &kp QUESTION  &kp DQT                                   &kp LBRC      &kp RBRC  	   &kp AMPS  	&kp COLON
+   &kp ASTERISK  &kp PERCENT   &kp QUESTION  &kp AT                                    &kp LBRC      &kp RBRC  	   &kp AMPS  	&kp COLON
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
                                              &trans        &trans        &os AL2U      &trans   
 //                                          └─────────────┴─────────────┴─────────────┴─────────────┘
