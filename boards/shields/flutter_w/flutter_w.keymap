@@ -45,7 +45,7 @@
             timeout-ms = <50>;
             key-positions = <7 8 9>;
             bindings = <&to NM1>;
-        };  
+        }; 
     };
 };
 
@@ -98,6 +98,13 @@
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = <&macro_tap &caps_off &to NM1>;
+        };
+        com_spc: com_spc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Must be 0
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_tap &kp COMMA &kp SPC>;
         };
     };
 };
@@ -188,7 +195,7 @@
         alpha_caps_2 {
             bindings = <
 //              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
-                 &kp LS(V)     &kp LS(W)     &kp LS(M)                                 &kp LS(F)     &kp COMMA     &kp LS(Z)          
+                 &kp LS(V)     &kp LS(W)     &kp LS(M)                                 &kp LS(F)     &com_spc      &kp LS(Z)          
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
    &kp LS(Q)     &kp LS(J)     &kp LS(P)     &kp LS(K)                                 &kp LS(B)     &kp COMMA     &kp LS(X)     &kp LS(Y)      
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
