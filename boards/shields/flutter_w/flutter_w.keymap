@@ -61,6 +61,16 @@
                 , <&macro_tap &sl MACRO_PLACEHOLDER>
                 ;
         };
+        dn: dn {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER &mo NM1>
+                ;
+        };
         rst: rst {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; // Must be 0
@@ -120,7 +130,7 @@
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
    &lt NM1 MINUS &lt SM2 N1    &lt SM1 N2    &lt SYS N3	                               &lt SYS N4    &lt SM1 N5    &lt SM2 N6   &lt NM1 EQUAL
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
-                                             &trans        &trans        &os AL2U      &trans   
+                                             &dn SPC       &trans        &os AL2U      &trans   
 //                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
@@ -151,7 +161,7 @@
 //              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
                  &kp ESC       &trans        &kp K_CMENU                               &kp DEL       &kp UP        &kp BSPC          
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
-   &kp TAB       &trans        &trans        &trans                                    &kp LEFT      &kp DOWN 	   &kp RIGHT    &kp ENTER   
+   &kp TAB       &trans        &trans        &trans                                    &kp LEFT      &kp DOWN 	   &kp RIGHT    &dn ENTER   
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
                                              &kp LSHFT     &kp LALT      &os AL2U      &kp LCTRL   
 //                                          └─────────────┴─────────────┴─────────────┴─────────────┘
