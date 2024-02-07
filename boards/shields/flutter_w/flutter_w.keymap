@@ -36,6 +36,11 @@
             key-positions = <6 7 8 9>;
             bindings = <&mo BT>;
         };
+        combo_caps { // caps word 
+            timeout-ms = <50>;
+            key-positions = <10 11 12>;
+            bindings = <&caps_word>;
+        };
     };
 };
 
