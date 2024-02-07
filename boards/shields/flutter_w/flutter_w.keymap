@@ -90,7 +90,7 @@
             #binding-cells = <0>; // Must be 0
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&macro_tap &caps_off &caps_word>;
+            bindings = <&macro_tap &caps_off &mo NM1 &caps_word>;
         };
         num_on: num_on {
             compatible = "zmk,behavior-macro";
