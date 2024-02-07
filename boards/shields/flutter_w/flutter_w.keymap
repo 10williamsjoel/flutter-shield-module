@@ -66,7 +66,14 @@
             #binding-cells = <0>; // Must be 0
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&macro_tap &to AL1>;
+            bindings = <&macro_tap &capsoff &to AL1>;
+        };
+        capsoff: capsoff {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Must be 0
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_tap &kp F19>;
         };
     };
 };
