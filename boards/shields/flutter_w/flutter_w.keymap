@@ -44,7 +44,7 @@
         combo_num { // Num lock
             timeout-ms = <50>;
             key-positions = <7 8 9>;
-            bindings = <&to NUM>;
+            bindings = <&to NM1>;
         };  
     };
 };
