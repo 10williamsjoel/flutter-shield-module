@@ -64,7 +64,7 @@
         reset: reset {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; // Must be 0
-            bindings = <&to AL1>;
+            bindings = <&macro_tap &to AL1>;
         };
     };
 };
