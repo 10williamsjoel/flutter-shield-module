@@ -121,7 +121,7 @@
       slm: sticky_layer_ignore_modifiers {
         compatible = "zmk,behavior-sticky-layer";
         #binding-cells = <1>;
-        bindings = <&mz>;
+        bindings = <&mo>;
         release-after-ms = <1000>;
         ignore-modifiers;
         };
