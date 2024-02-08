@@ -41,7 +41,7 @@
             combo_fun { // sticky layer for Function keys
             timeout-ms = <50>;
             key-positions = <10 11 12 13>;
-            bindings = <&sl FUN>;
+            bindings = <&slm FUN>;
         };
         combo_caps { // caps word 
             timeout-ms = <50>;
@@ -116,6 +116,17 @@
     };
 };
 
+/ {
+    behaviors {
+      slm: sticky_layer_ignore_modifiers {
+        compatible = "zmk,behavior-sticky-layer";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        ignore-modifiers;
+        };
+    };
+};
 
 / {
     keymap {
