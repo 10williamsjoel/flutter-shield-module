@@ -10,8 +10,9 @@
 #define SM1  3	
 #define SM2  4	
 #define SYS  5
-#define BT   6	
-#define AL2U 7
+#define FUN  6	
+#define BT   7
+#define AL2U 8
 
 &mt {
     tapping-term-ms = <200>;
@@ -35,6 +36,12 @@
             timeout-ms = <50>;
             key-positions = <6 7 8 9>;
             bindings = <&mo BT>;
+        };
+        compatible = "zmk,combos";
+            combo_fun { // sticky layer for Function keys
+            timeout-ms = <50>;
+            key-positions = <10 11 12 13>;
+            bindings = <&sl FUN>;
         };
         combo_caps { // caps word 
             timeout-ms = <50>;
@@ -178,6 +185,17 @@
    &kp TAB     &mt LC(Z) LC(Y) &mt LC(V) LC(C) &trans                                 &mt HOME LEFT &mt PG_DN DOWN &mt END RIGHT &dn ENTER   
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
                                              &kp LSHFT     &kp LALT      &os AL2U      &kp LCTRL   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
+            >;
+        };
+        fun {
+            bindings = <
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &kp F10       &kp F11       &kp F12                                   &kp F7        &kp F8        &kp F9          
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &none         &kp F1        &kp F2        &kp F3                                    &kp F4        &kp F5        &kp F6       &none
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &trans        &os AL2U      &trans   
 //                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
