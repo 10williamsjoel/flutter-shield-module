@@ -68,14 +68,14 @@
                 , <&macro_tap &sl MACRO_PLACEHOLDER>
                 ;
         };
-        dnto: dnto {
+        dnos: dnos {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <0>;
             tap-ms = <0>;
             bindings
                 = <&macro_param_1to1>
-                , <&macro_tap &mo NM1 &sl MACRO_PLACEHOLDER>
+                , <&macro_tap &to AL1 &sl MACRO_PLACEHOLDER>
                 ;
         };
         dn: dn {
@@ -161,7 +161,7 @@
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
    &lt NM1 MINUS &lt SM2 N1    &lt SM1 N2    &lt SYS N3	                               &lt SYS N4    &lt SM1 N5    &lt SM2 N6   &lt NM1 EQUAL
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
-                                             &dn SPC       &kp SPC       &os AL2U      &dnto AL2   
+                                             &dn SPC       &kp SPC       &os AL2U      &dnos AL2   
 //                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
