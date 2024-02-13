@@ -6,13 +6,14 @@
 /* Layers */
 #define AL1  0
 #define NM1  1
-#define AL2  2
-#define SM1  3	
-#define SM2  4	
-#define SYS  5
-#define FUN  6	
-#define BT   7
-#define AL2U 8
+#define LNUM 2
+#define AL2  3
+#define SM1  4	
+#define SM2  5	
+#define SYS  6
+#define FUN  7	
+#define BT   8
+#define AL2U 9
 
 &mt {
     tapping-term-ms = <200>;
@@ -53,10 +54,10 @@
             key-positions = <7 8 9>;
             bindings = <&to NM1>;
         }; 
-        combo_lhctrl { // Num lock
+        combo_lhnum { // Left hand numbers
             timeout-ms = <50>;
-            key-positions = <2 15>;
-            bindings = <&ctrlleft>;
+            key-positions = <6 15>;
+            bindings = <&sl LNUM>;
         }; 
     };
 };
@@ -129,24 +130,17 @@
             tap-ms = <0>;
             bindings = <&macro_tap &kp COMMA &kp SPC>;
         };
-        ctrlleft: ctrlleft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>; // Must be 0
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_tap &sk LSFT &os AL2>;
-        };
     };
 };
 
 / {
     behaviors {
-      slm: sticky_layer_ignore_modifiers {
-        compatible = "zmk,behavior-sticky-key";
-        #binding-cells = <1>;
-        bindings = <&mo>;
-        release-after-ms = <1000>;
-        ignore-modifiers;
+        slm: sticky_layer_ignore_modifiers {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&mo>;
+            release-after-ms = <1000>;
+            ignore-modifiers;
         };
     };
 };
@@ -175,6 +169,17 @@
    &lt NM1 MINUS &lt SM2 N1    &lt SM1 N2    &lt SYS N3	                               &lt SYS N4    &lt SM1 N5    &lt SM2 N6   &lt NM1 EQUAL
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
                                              &dn SPC       &kp SPC       &dnos AL2U    &dnos AL2   
+//                                          └─────────────┴─────────────┴─────────────┴─────────────┘
+            >;
+        };
+        lnum {
+            bindings = <
+//              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
+                 &kp N7        &kp N8        &kp N9                                    &mt RCTL N7   &mt LALT N8   &mt RGUI N9          
+//┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
+   &kp EQUAL     &kp N4        &kp N5        &kp N6                                    &lt SYS N4    &lt SM1 N5    &lt SM2 N6   &lt NM1 EQUAL
+//└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
+                                             &trans        &trans        &trans        &trans           
 //                                          └─────────────┴─────────────┴─────────────┴─────────────┘
             >;
         };
