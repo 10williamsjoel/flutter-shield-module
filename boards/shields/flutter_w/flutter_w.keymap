@@ -219,9 +219,9 @@
         sys {
             bindings = <
 //              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
-                 &kp ESC       &trans        &kp K_CMENU                               &kp DEL       &mt PG_UP UP  &mt LC(BSPC) BSPC          
+                 &mt LC(A) ESC &mt BSPC DEL  &mt LCTL K_CMENU                          &kp DEL       &mt PG_UP UP  &mt LC(BSPC) BSPC          
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
-   &kp TAB     &mt LC(Y) LC(Z) &mt LC(V) LC(C) &trans                                 &mt HOME LEFT &mt PG_DN DOWN &mt END RIGHT &dn ENTER   
+&mt ENTER TAB &mt LC(Y) LC(Z) &mt LC(V) LC(C) &trans                                 &mt HOME LEFT &mt PG_DN DOWN &mt END RIGHT &dn ENTER   
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
                                              &kp LSHFT     &kp LALT      &os AL2U      &kp LCTRL   
 //                                          └─────────────┴─────────────┴─────────────┴─────────────┘
