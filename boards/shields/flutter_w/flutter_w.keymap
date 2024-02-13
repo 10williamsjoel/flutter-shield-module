@@ -59,6 +59,11 @@
             key-positions = <6 15>;
             bindings = <&sl LNUM>;
         }; 
+        combo_ctrlsys { // Sends ctrl and sys for one handed commands
+            timeout-ms = <50>;
+            key-positions = <2 9>;
+            bindings = <&mo LC(SYS)>;
+        }; 
     };
 };
 
@@ -219,7 +224,7 @@
         sys {
             bindings = <
 //              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
-                 &mt LC(A) ESC &mt BSPC DEL  &mt LCTL K_CMENU                          &kp DEL       &mt PG_UP UP  &mt LC(BSPC) BSPC          
+                 &mt LC(A) ESC &mt DEL BSPC  &mt LCTL K_CMENU                          &kp DEL       &mt PG_UP UP  &mt LC(BSPC) BSPC          
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
 &mt ENTER TAB &mt LC(Y) LC(Z) &mt LC(V) LC(C) &trans                                 &mt HOME LEFT &mt PG_DN DOWN &mt END RIGHT &dn ENTER   
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
