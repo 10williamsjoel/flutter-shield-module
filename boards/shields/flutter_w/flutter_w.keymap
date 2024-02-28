@@ -77,7 +77,7 @@
         combo_volume_up { // Sends volume up
             timeout-ms = <50>;
             key-positions = <2 9>;
-            bindings = <&kp C_VOLUME_UP>;
+            bindings = <&kp A>;
         }; 
         combo_volume_down { // Sends volume down
             timeout-ms = <50>;
