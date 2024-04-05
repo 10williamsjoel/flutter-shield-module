@@ -54,37 +54,37 @@
         >;
     };
 
-    kscan1: kscan_1 {
-        compatible = "zmk,kscan-gpio-matrix";
-        wakeup-source;
-        diode-direction = "row2col";
-        row-gpios
-            = <&pro_micro 0  GPIO_ACTIVE_HIGH>
-            , <&pro_micro 4  GPIO_ACTIVE_HIGH>
-            , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 20 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-            ;
-        col-gpios
-            = <&pro_micro 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;
-    };
+//    kscan1: kscan_1 {
+//        compatible = "zmk,kscan-gpio-matrix";
+//        wakeup-source;
+//        diode-direction = "row2col";
+//        row-gpios
+//            = <&pro_micro 0  GPIO_ACTIVE_HIGH>
+//            , <&pro_micro 4  GPIO_ACTIVE_HIGH>
+//            , <&pro_micro 16 GPIO_ACTIVE_HIGH>
+//            , <&pro_micro 20 GPIO_ACTIVE_HIGH>
+//            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+//            ;
+//        col-gpios
+//            = <&pro_micro 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+//            , <&pro_micro 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+//            , <&pro_micro 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+//            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+//            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+//            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+//            ;
+//    };
 
-    transform1: matrix_transform_1 {
-        compatible = "zmk,matrix-transform";
-        rows = <5>;
-        columns = <6>;
-        map = <
+//    transform1: matrix_transform_1 {
+//        compatible = "zmk,matrix-transform";
+//        rows = <5>;
+//        columns = <6>;
+//        map = <
         
-                     RC(0, 0) RC(0, 1) RC(0, 2)                   RC(3, 3) RC(3, 4) RC(3, 5)
-            RC(2, 0) RC(1, 0) RC(1, 1) RC(1, 2)                   RC(4, 3) RC(4, 4) RC(4, 5) RC(2, 5)
-                                       RC(2, 1) RC(2, 2) RC(2, 3) RC(2, 4)
-        >;
-    };
+//                     RC(0, 0) RC(0, 1) RC(0, 2)                   RC(3, 3) RC(3, 4) RC(3, 5)
+//            RC(2, 0) RC(1, 0) RC(1, 1) RC(1, 2)                   RC(4, 3) RC(4, 4) RC(4, 5) RC(2, 5)
+//                                       RC(2, 1) RC(2, 2) RC(2, 3) RC(2, 4)
+//        >;
+//    };
 
 };
