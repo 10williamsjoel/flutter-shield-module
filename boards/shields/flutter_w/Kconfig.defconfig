@@ -1,6 +1,6 @@
 if SHIELD_FLUTTER_W
 
 config ZMK_KEYBOARD_NAME
-    default "Flutter_W"
+    default "Flutter_C"
 
 endif
