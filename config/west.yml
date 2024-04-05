@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: cdc-mkb
-      url-base: https://github.com/cdc-mkb/zmk/tree/mouse-pim447
+      url-base: https://github.com/cdc-mkb
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
