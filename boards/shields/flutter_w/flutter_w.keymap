@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 1000 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 60 
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -8,7 +8,7 @@
 
 &msc {
     acceleration-exponent = <2>;
-    time-to-max-speed-ms = <10000>;
+    time-to-max-speed-ms = <2000>;
     delay-ms = <0>;         
 };
 
