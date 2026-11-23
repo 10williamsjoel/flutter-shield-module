@@ -1,14 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 1000 
-<dt-bindings/zmk/pointing.h>
-
-&msc {
-    time-to-max-speed-ms = <10000>;
-    acceleration-exponent = <2>;
-    delay-ms = <0>;         
-};
-
 / {
     chosen {
         zmk,kscan = &kscan0;
