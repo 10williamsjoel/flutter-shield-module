@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 1000 
 <dt-bindings/zmk/pointing.h>
 
 &msc {
