@@ -17,7 +17,7 @@
 #define AL2U 9
 #define SCRL 10
 
-#define CUSTOM_SCROLL_MAX 2000
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 1000 
 
 &mt {
     tapping-term-ms = <200>;
