@@ -20,7 +20,11 @@
 #define AL2U 9
 #define SCRL 10
 
-
+&msc {
+    time-to-max-speed-ms = <1000>;
+    acceleration-exponent = <2>;
+    delay-ms = <0>;         
+};
 
 &mt {
     tapping-term-ms = <200>;
@@ -44,6 +48,7 @@
             timeout-ms = <50>;
             key-positions = <6 7 8 9 14>;
             bindings = <&mo SCRL>;
+            layers = <0 1 2 3 4 5 6 7 8 9>;
         };
         combo_bt { // sticky layer for bluetooth
             timeout-ms = <50>;
@@ -54,12 +59,14 @@
             combo_fun { // sticky layer for Function keys
             timeout-ms = <50>;
             key-positions = <10 11 12 13>;
+            layers = <0 1 2 3 4 5 6 7 8 9>;
             bindings = <&slm FUN>;
         };
         combo_caps { // caps word 
             timeout-ms = <50>;
             key-positions = <10 11 12>;
             bindings = <&caps_on>;
+            layers = <0 1 2 3 4 5 6 7 8 9>;
         };
         combo_num { // Num lock
             timeout-ms = <50>;
@@ -321,10 +328,4 @@
         };
     };
 
-};
-
-&msc {
-    time-to-max-speed-ms = <600>;
-    acceleration-exponent = <2>;
-    delay-ms = <0>;         
 };
