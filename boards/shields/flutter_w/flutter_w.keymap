@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 
 /* Layers */
@@ -22,7 +23,7 @@
 
 / {
     behaviors {
-        asc: accel_scroll {
+        asc: asc {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_X>;
@@ -32,7 +33,7 @@
         };
     };
 
-    accel_scrl_listener: accel_scrl_listener {
+    asc_listener: asc_listener {
         compatible = "zmk,input-listener";
         device = <&asc>;
         input-processors = <&zip_xy_to_scroll_mapper>;
