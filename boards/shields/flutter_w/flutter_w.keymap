@@ -20,6 +20,26 @@
 #define AL2U 9
 #define SCRL 10
 
+/ {
+    behaviors {
+        asc: accel_scroll {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <1000>;
+            acceleration-exponent = <1>;
+        };
+    };
+
+    accel_scrl_listener: accel_scrl_listener {
+        compatible = "zmk,input-listener";
+        device = <&accel_scrl>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
+};
+
+
 &msc {
     time-to-max-speed-ms = <1000>;
     acceleration-exponent = <1>;
@@ -318,7 +338,7 @@
         scroll {
             bindings = <
 //              ┌─────────────┬─────────────┬─────────────┐                           ┌─────────────┬─────────────┬────────────┐	
-                 &trans        &trans        &trans                                    &mmv MOVE_UP  &msc SCRL_UP  &mmv MOVE_DOWN           
+                 &trans        &trans        &trans                                    &mmv MOVE_UP  &asc SCRL_UP  &mmv MOVE_DOWN           
 //┌─────────────┼─────────────┼─────────────┼─────────────┤                           ├─────────────┼─────────────┼────────────┼────────────┐ 
    &trans        &trans        &trans        &trans                                  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &kp ENTER
 //└─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────┼─────────────┼─────────────┴────────────┴────────────┘
