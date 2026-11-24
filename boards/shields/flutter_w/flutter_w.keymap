@@ -34,7 +34,7 @@
 
     accel_scrl_listener: accel_scrl_listener {
         compatible = "zmk,input-listener";
-        device = <&accel_scrl>;
+        device = <&asc>;
         input-processors = <&zip_xy_to_scroll_mapper>;
     };
 };
